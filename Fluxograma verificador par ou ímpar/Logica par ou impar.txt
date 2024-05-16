@@ -1,0 +1,9 @@
+Exercicio 04 Logica
+
+Passo 1 - Pegar um número
+
+Passo 2 - Fazer modulo de 2
+
+Passo 3 - Verificar se irá ter resto no resultado
+
+Passo 4 - Se tiver resto ímpar, se não tiver par

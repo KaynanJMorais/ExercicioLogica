@@ -1,0 +1,8 @@
+Exercicio 03 logica
+
+Passo 1 - Pegar Dados/Valor temperatura em Celcius
+
+Passo 2 - Calcular usando a formula (C/5=F-32/9)
+
+Passo 3 - Exibir Resultdo Calculo
+
