@@ -1,0 +1,21 @@
+<script>
+    alert("Somador de nota SENAI")
+    let x = prompt("Nome")
+    let y = parseInt(prompt("Primeira nota"));
+    let z = parseInt(prompt("Segunda nota"));
+    let k = parseInt(prompt("Terceira nota"));
+
+    let notas = (y+z+k)/3;
+
+    if (notas >=7){
+        alert(x + " Aprovado");
+    }
+
+    else if(notas > 5 && notas < 7){
+        alert(x + " Recuperação")
+    }
+    
+    else{
+        alert(x + " Reprovado")
+    }
+</script>
