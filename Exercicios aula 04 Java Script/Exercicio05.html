@@ -1,0 +1,41 @@
+<script>
+
+    let nome = []
+    let idade = []
+    let sexo = []
+    let saude = []
+    let aptidao = 0
+    let sair = 1
+
+
+    while (sair != 0) {
+        
+        let n = prompt("Digite seu nome:")
+        let i = parseInt(prompt("Digite sua idade:"))
+        let se = prompt("Digite seu sexo:")
+        let sa = prompt("Como esta sua saude:")
+
+       nome.push(n)
+       idade.push(i) 
+       sexo.push(se) 
+       saude.push(sa)
+
+
+       if (idade>=18 && sexo == "m" && saude == "boa") {
+        alert("Apto")
+        aptidao++
+       }
+
+       else {
+        alert("Não Apto")
+       }
+
+       sair = prompt("Sair do progama? - Digite 0")
+
+        
+    }
+
+    alert(aptidao)
+    
+
+</script>

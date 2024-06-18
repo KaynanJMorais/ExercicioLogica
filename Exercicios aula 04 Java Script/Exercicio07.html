@@ -1,0 +1,23 @@
+<script>
+    let cadastrados = []
+    let negativados = 0
+    let fechar = 0
+
+    while(fechar!=1){
+        let conta = parseInt(prompt("Digite o numero da sua conta:"))
+        let saldo = parseFloat(prompt("Digite seu saldo:"))
+
+
+        cadastrados.push(conta)
+
+        if(saldo<0){
+            negativados++
+        }
+
+        fechar = parseInt(prompt("Deseja encerrar a sessão? - digite 1"))
+    }
+
+    alert("Pessoas cadastradas: " + cadastrados.length + "\nNegativados: " + negativados)
+    
+
+</script>
