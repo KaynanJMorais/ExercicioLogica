@@ -1,47 +1,46 @@
 <script>
-    let n = prompt("Qual seu nome?")
-    let s = prompt("Qual seu sexo? - *M ou F*");
-    let y = parseInt(prompt("Qual sua idade?"));
-    let h = parseFloat(prompt("Qual sua altura? *Ex.: 1.73*"));
-    let peso = 0
+  let n = prompt("Qual seu nome?");
+  let s = prompt("Qual seu sexo? - *M ou F*");
+  let y = parseInt(prompt("Qual sua idade?"));
+  let h = parseFloat(prompt("Qual sua altura? *Ex.: 1.73*"));
+  let peso = 0;
 
-    switch (s) {
-        case "M":
-            if (h > 1.70)
-                if (y <= 20){
-                    peso = (72.7*h)-58};
-
-                if (y >=21 && idade<=39){
-                    peso = (72.7*h)-53};
-            
-                if (y >= 40){
-                    peso = (72.7*h)-45}
-
-            else{ 
-            if (h <=1.70)
-                if (y <= 40){
-                    peso = (72.7*h)-50}
-                }
-
-                if (y >40){
-                    peso = (72.7*h)-58
-                }
-            break;
-        case "F":
-            if (h > 1.50) {
-                    peso = (62.1*h)-44.7}
-                    else{
-                        if (y >= 35)
-                            peso = (62.1*h)-45}
-
-                        if (y < 35){
-                            peso = (62.1*h)-49
-                        }
-            break;
+  switch (s) {
+    case "M":
+      if (h > 1.7)
+        if (y <= 20) {
+          peso = 72.7 * h - 58;
         }
-    
-    alert(n +" Seu peso essencial e " + peso);
-    
-        
-            
+
+      if (y >= 21 && idade <= 39) {
+        peso = 72.7 * h - 53;
+      }
+
+      if (y >= 40) {
+        peso = 72.7 * h - 45;
+      } else {
+        if (h <= 1.7)
+          if (y <= 40) {
+            peso = 72.7 * h - 50;
+          }
+      }
+
+      if (y > 40) {
+        peso = 72.7 * h - 58;
+      }
+      break;
+    case "F":
+      if (h > 1.5) {
+        peso = 62.1 * h - 44.7;
+      } else {
+        if (y >= 35) peso = 62.1 * h - 45;
+      }
+
+      if (y < 35) {
+        peso = 62.1 * h - 49;
+      }
+      break;
+  }
+
+  alert(n + " Seu peso essencial e " + peso);
 </script>

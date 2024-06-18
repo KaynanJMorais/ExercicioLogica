@@ -1,3 +1,17 @@
 <script>
-    
+const age = parseInt(prompt('Digite a idade do nadador:'));
+
+if (age >= 5 && age <= 7) {
+  alert('Categoria: Infantil A');
+} else if (age >= 8 && age <= 10) {
+  alert('Categoria: Infantil B');
+} else if (age >= 11 && age <= 13) {
+  alert('Categoria: Juvenil A');
+} else if (age >= 14 && age <= 17) {
+  alert('Categoria: Juvenil B');
+} else if (age >= 18 && age <= 25) {
+  alert('Categoria: Senior');
+} else {
+  alert('Idade fora da faixa etária');
+}
 </script>

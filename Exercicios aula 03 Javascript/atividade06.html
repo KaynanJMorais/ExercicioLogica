@@ -1,0 +1,45 @@
+<script>
+    let candidato1 = 0
+    let candidato2 = 0
+    let candidato3 = 0
+    let candidato4 = 0
+    let nulo = 0
+    let branco = 0
+    let urna = 0
+
+    do{
+        urna = parseInt(prompt("Digite numero candidato: 1,2,3,4 \n5 nulo \n6 branco"))
+
+        switch(urna){
+            case 1:
+                candidato1++;
+                break;
+            case 2:
+                candidato2++;
+                break;
+            case 3:
+                candidato3++;
+                break;
+            case 4:
+                candidato4++;
+                break;
+            case 5:
+                nulo++;
+                break;
+            case 6:
+                branco++;
+                break;
+            case 0:
+                alert("calculando votos");
+                break;
+            default:
+                alert("Insira um numero valido");
+                break;
+        }
+        
+    }
+    
+    while(urna !=0)
+
+    alert("candidato 01: " + candidato1 + "\ncandidato2" + candidato2 + "candidato 03: " + candidato3 + "\ncandidato4" + candidato4 + "\nnulo: " + nulo + "\nbranco" + branco)
+</script>                 
