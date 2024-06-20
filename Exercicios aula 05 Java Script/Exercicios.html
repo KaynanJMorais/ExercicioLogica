@@ -1,0 +1,135 @@
+<script>
+    let menu = parseInt(prompt("escolha atividade de 1 a 9 para corrigir"))
+    while(menu!=0){
+    switch(menu){
+        case 1:
+            exercicio01();
+            break;  
+        case 2:
+            exercicio02();
+            break;  
+        case 3:
+            exercicio03();
+            break;  
+        case 4:
+            exercicio04();
+            break;  
+        case 5:
+            exercicio05();
+            break;  
+        case 6:
+            exercicio06();
+            break;  
+        case 7:
+            exercicio07();
+            break;  
+        case 8:
+            exercicio08();
+            break;  
+        case 9:
+            exercicio09();
+            break;  
+        default:
+            alert("digite um valor valido para corrigir ou 0 para fechar")
+            break;
+    }
+    menu = parseInt(prompt("escolha atividade de 1 a 9 para corrigir"))
+}
+    function exercicio01(){
+        alert("Kaynan")
+    }
+    function exercicio02(){
+        var nome = prompt("Qual é o seu nome?");
+        alert("Olá, " + nome + "!")
+    }
+    function exercicio03(){
+        let a = parseInt(prompt("Define o valor de A"));
+    let b = parseInt(prompt("Define o valor de B"));
+
+    let soma = a+b
+    let diferença = a-b
+    let divisão = a/b
+    let multiplicação = a*b
+
+    alert("soma: " + soma)
+    alert("diferença: " + diferença)
+    alert("divisão: " + divisão)
+    alert("multiplicação: " + multiplicação)
+    }
+    function exercicio04(){
+        let nome = prompt("Digite seu nome")
+        let sobrenome = prompt("Digite seu sobrenome")
+
+        return (nome ) +" " + ( sobrenome);
+    }
+    function exercicio05(){
+        let idade = parseInt(prompt("Digite sua idade?"))
+
+        if(idade>=18){
+            alert("Você é maior de idade")
+        }
+        else{
+            alert("Você é menor de idade")
+        }
+    }
+    function exercicio06(){
+        let numero = parseInt(prompt("Digite um numero para verificar se e par ou impar"))
+
+        if(numero %2 == 0){
+            alert("Seu numero e par")
+        }
+        else{
+            alert("Seu numero e impar")
+        }
+    }
+    function exercicio07(){
+        let numero = parseInt(prompt("Digite um numero"))
+
+        for (let i = numero; i >= 0; i--){
+            alert(i)
+        }
+}
+    function exercicio08(){
+        let pessoas = []
+    let demaior = 0
+    let menor = 0
+    let fechar = 0
+    let idade = parseInt(prompt("Qual sua idade"))
+    
+
+    while(idade!=0){
+        
+
+        pessoas.push(idade)
+
+        if(idade>=18){
+            demaior++
+        }
+        else{
+            menor++
+        }
+
+        alert("Pessoas de maiores " + demaior + "\nPessoas de menor " + menor + "\nNumero de pessoas que digitaram a idade " + pessoas.length)
+        idade = parseInt(prompt("Qual sua idade"))
+    }
+
+}
+
+    function exercicio09(){
+        let numero = parseInt(prompt("Digite um numero (Digite 0 para encerrar o codigo)"))
+        let par = 0
+        let impar = 0
+
+        while(numero!=0){
+        if(numero %2 == 0){
+            par++
+        }
+        else{
+            impar++
+        }
+        alert("Numero digatos pares: " + par + "\nNumero digitados impares: " + impar)
+        numero = parseInt(prompt("Digite um numero"))
+    }
+    }
+
+</script>
