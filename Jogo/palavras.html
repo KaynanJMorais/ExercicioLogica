@@ -1,0 +1,24 @@
+<script>
+    let palavrasjogo = ["roblox", "joaquim", "neymar", "ronaldo"]
+    let aleatorio = Math.floor(Math.random()*palavrasjogo.length)
+    let palavra = palavrasjogo[aleatorio]
+
+    resposta = prompt(embaralharPalavra(palavra) + "\nDigite a palavra")
+
+   if(resposta == palavra){
+    alert("Parabéns, você acertou")
+   }
+   else(
+    alert("Que pena, você errou")
+   )
+
+
+   function embaralharPalavra(palavra){
+    let palavraEmbaralhada = []
+    palavraEmbaralhada = palavra.split('')
+    palavraEmbaralhada = palavraEmbaralhada.sort()
+    palavraEmbaralhada = palavraEmbaralhada.join()
+
+    return palavraEmbaralhada.toLowerCase()
+   }
+</script>

@@ -21,7 +21,7 @@
             exercicio06();
             break;  
         case 7:
-            exercicio07();
+            alert(exercicio07());
             break;  
         case 8:
             exercicio08();
@@ -84,10 +84,11 @@
     }
     function exercicio07(){
         let numero = parseInt(prompt("Digite um numero"))
-
-        for (let i = numero; i >= 0; i--){
-            alert(i)
+        let resultadoloop = ""
+        for (let i=0; i<=numero ; i++){
+            resultadoloop += ("\n" + i)
         }
+        return resultadoloop
 }
     function exercicio08(){
         let pessoas = []
